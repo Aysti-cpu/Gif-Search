@@ -1,0 +1,7 @@
+PUSH:	docker push dckerg/giphy_search:new
+BUILD:	docker build -t dckerg/giphy_search:new .
+RUN:	docker run  -p 8080:8080 dckerg/giphy_search
+
+		docker run --name vol-test -p 8080:8080 -v /data dckerg/giphy_search
+		
+		docker inspect -f "" vol-test
